@@ -5,7 +5,7 @@ import {assets} from '../assets/assets';
 
 const Footer = () => {
   return (
-    <div className="pt-10 px-4 md:px-20 lg:px-432 bg-gray-800 w-full overflow-hidden text-white"
+    <div className="pt-10 px-4 md:px-20 lg:px-42 bg-gray-800 w-full overflow-hidden text-white"
     id="Footer">
       <div className="container mx-auto flex md:flex-row  justify-between items-start">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">

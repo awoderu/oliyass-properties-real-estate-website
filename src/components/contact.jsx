@@ -48,7 +48,9 @@ const Contact = () => {
             <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
                 Contact <span className="underline underline-offset-4 decoration-1 underline font-light">Us</span>
             </h1>
-            <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto justify-center lg:justify-center ">Get in touch with us for any inquiries or support.</p>
+            <div className="mb-12 flex w-full justify-center">
+              <p className="max-w-80 text-center text-gray-500">Get in touch with us for any inquiries or support.</p>
+            </div>
 
             <form onSubmit={onSubmit} className="max-w-8xl mx-auto text-gray-600 pt-8">
                 <div className="flex flex-wrap">
