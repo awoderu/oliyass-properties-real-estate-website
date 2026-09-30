@@ -9,8 +9,8 @@ const Footer = () => {
     id="Footer">
       <div className="container mx-auto flex md:flex-row  justify-between items-start">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <img src={assets.logo_dark} alt="Oliyass Properties Logo" 
-            className="mx-auto mb-4" />
+            <img src={assets.oliyass_logo} alt="Oliyass Properties Logo" 
+            className="mx-auto mb-4 w-12" />
             
         </div>
         <div className="w-full md:w-1/5 mb-8 md:mb-0">  
