@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
@@ -8,7 +9,13 @@ const Header = () => {
     style={{ backgroundImage: `url(${assets.header_img})` }} 
     id="header"
     >
-        <div className="container text-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white">
+        <motion.div 
+        initial={{opacity: 0, y:100}}
+        transition={{ duration: 1.5 }} 
+        whileInView = {{opacity: 1, y: 0}}
+        viewport={{ once: true }}
+        
+        className="container text-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white">
             <h2 className="text-5xl sm:text-6xl md:text-[82px] inline-block
             max-w-3xl font-semibold">Explore our Homes</h2>
             <div className="mt-16 space-x-6">
@@ -19,7 +26,7 @@ const Header = () => {
                     Contact Us
                 </a>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
